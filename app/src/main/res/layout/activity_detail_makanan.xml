@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_200">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="29dp"
+                    android:paddingTop="29dp"
+                    android:paddingEnd="29dp"
+                    android:paddingBottom="69dp">
+
+                    <ImageView
+                        android:id="@+id/btn_back_detail"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="8dp"
+                        android:src="@drawable/ic_back" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-40dp"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/opensansbold"
+                            android:gravity="center"
+                            android:text="@string/txt_detail_makanan"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/rounded_bg"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginEnd="29dp"
+                    android:layout_marginBottom="40dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="20dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp">
+                            <ImageView
+                                android:id="@+id/iv_makanan"
+                                android:layout_width="194dp"
+                                android:layout_height="150dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/rounded_10dp"/>
+                            <TextView
+                                android:id="@+id/tv_nama_makanan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@+id/iv_makanan"
+                                android:text="@string/txt_nama_makanan"
+                                android:fontFamily="@font/opensansbold"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:id="@+id/tv_harga_makanan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_toEndOf="@+id/iv_makanan"
+                                android:layout_below="@+id/tv_nama_makanan"
+                                android:textSize="14sp"
+                                android:text="@string/txt_harga"/>
+
+                            <Button
+                                android:id="@+id/btn_order"
+                                android:layout_width="90dp"
+                                android:layout_height="42dp"
+                                android:layout_toEndOf="@id/iv_makanan"
+                                android:layout_below="@id/tv_harga_makanan"
+                                android:backgroundTint="#25D366"
+                                android:text="@string/txt_order" />
+                            <Button
+                                android:id="@+id/btn_share"
+                                android:layout_width="90dp"
+                                android:layout_height="42dp"
+                                android:layout_toEndOf="@id/iv_makanan"
+                                android:layout_below="@id/btn_order"
+                                android:text="@string/txt_share" />
+                        </RelativeLayout>
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_detail_makanan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:text="Nasi goreng adalah sebuah makanan berupa nasi yang digoreng dan diaduk dalam minyak goreng, margarin, atau mentega. Biasanya ditambah kecap manis, bawang merah, bawang putih, asam jawa, lada dan bumbu-bumbu lainnya; seperti telur, ayam, dan kerupuk. Ada pula nasi goreng jenis lain yang dibuat bersama ikan asin yang juga populer di seluruh Indonesia. Nasi goreng juga dikenal sebagai masakan nasional Indonesia. Dari sekian banyak hidangan dalam khazanah Masakan Indonesia, hanya sedikit yang dapat dianggap sebagai makanan nasional sejati. Masakan nasional Indonesia ini tidak mengenal batasan kelas sosial. Nasi goreng dapat dinikmati secara sederhana di warung tepi jalan, gerobak penjaja keliling, hingga restoran dan meja prasmanan dalam pesta. Pada tahun 2011, sebuah polling Internet yang diadakan oleh CNN International dan diikuti oleh 35.000 orang menempatkan Nasi Goreng pada peringkat dua dalam daftar '50 Makanan Terlezat di Dunia' setelah rendang."/>
+
+                        </androidx.core.widget.NestedScrollView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Submission</string>
+    <string name="tv1menu">Menu</string>
+    <string name="tv2makanan">makanan</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_detail_makanan">Detail Makanan</string>
+    <string name="txt_about_me">About me</string>
+    <string name="namaku">Pamungkas Andono W</string>
+    <string name="txt_nama_makanan">Nama makanan</string>
+    <string name="txt_harga">Rp.10,000</string>
+    <string name="txt_order">Order</string>
+    <string name="txt_share">Share</string>
+</resources>

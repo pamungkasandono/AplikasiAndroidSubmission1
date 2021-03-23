@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    android:background="@drawable/bg_shadow_item"
+    android:id="@+id/layout_menu_makanan">
+
+    <ImageView
+        android:id="@+id/img_menu_photo"
+        android:layout_width="107dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/img_menu_photo"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_menu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensansbold"
+            tools:text="Mie Ayam" />
+        <TextView
+            android:id="@+id/tv_menu_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textSize="12sp"
+            tools:text="Mi ayam atau bakmi ayam adalah masakan Indonesia yang terbuat dari mi kuning direbus mendidih..." />
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

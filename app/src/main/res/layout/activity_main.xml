@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:id="@+id/tv_sapaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Sore! "
+            android:textSize="18sp"
+            app:drawableRightCompat="@drawable/ic_smiling_face" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/btn_aboutme"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingStart="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ic_user"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-4dp"
+            android:textSize="47sp"
+            android:text="@string/tv1menu"/>
+        <TextView
+            android:id="@+id/tv_title_makanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv1"
+            android:paddingStart="10dp"
+            android:textSize="47sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit = "marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="@string/tv2makanan"/>
+        <View
+            android:id="@+id/linetv1"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_below="@+id/tv1"
+            android:layout_alignStart="@+id/tv1"
+            android:layout_alignEnd="@+id/tv1"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/rounded_line" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/rounded_10dp"
+        android:paddingStart="18dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:listitem="@layout/item_menu"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
